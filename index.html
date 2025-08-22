@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Компания 'Быстрее ветра' - профессиональные корпоративные перевозки и трансферы в Минске и по Беларуси">
+    <title>"Быстрее ветра" - Корпоративные перевозки</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">
+                <img src="img/logo/logo.webp" alt="Логотип компании 'Быстрее ветра'" class="logo__img" width="150" height="50">
+            </a>
+            
+            <nav class="nav" aria-label="Основное меню">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#services" class="nav__link">УСЛУГИ</a></li>
+                    <li class="nav__item"><a href="#cars" class="nav__link">АВТОПАРК</a></li>
+                    <li class="nav__item"><a href="#drivers" class="nav__link">ВОДИТЕЛИ</a></li>
+                    <li class="nav__item"><a href="#vacancies" class="nav__link">ВАКАНСИИ</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="phone">
+                <i class="fas fa-phone phone__icon" aria-hidden="true"></i>
+                <a href="tel:+375297041455" class="phone__link">+375 (29) 704-14-55</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://t.me/your_telegram" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                    <i class="fab fa-telegram" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/bvet.ra" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://tiktok.com/@bvetra.by" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <i class="fab fa-tiktok" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__content">
+                    <h1 class="hero__title hero-title section-title--light">Комфортный<br>транспорт<br>для вашего бизнеса</h1>
+                    <p class="hero__description">Корпоративные перевозки, трансферы,<br>аренда авто в Минске и по Беларуси</p>
+                    <a href="#" class="btn hero__btn" onclick="openFeedbackForm(); return false;">ЗАКАЗАТЬ ТРАНСФЕР</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="b-editor">
+        <div class="b-company" id="company">
+            <div class="company__title">
+                <h2 class="section-title">О КОМПАНИИ</h2>
+            </div>
+
+            <div class="company__inner">
+                <!-- Левая часть с текстом -->
+                <div class="company__left">
+                    <div class="company__text">
+                        <p>Быстрее ветра — профессиональная служба корпоративных трансферов с собственным автопарком от эконом до премиум-класса. 
+                            Решаем все транспортные задачи бизнеса: гостевые трансферы, перевозки сотрудников, корпоративные события. 
+                            Также предоставляем услуги аренды авто без водителя.</p>
+                        <p>Наш автопарк включает 40 современных автомобилей: от практичных Volkswagen Passat до роскошных Mercedes S-Class. 
+                            Все водители проходят многоэтапный отбор и регулярное обучение, гарантируя безопасность, пунктуальность и безупречный сервис.</p>
+                        <p>Мы сотрудничаем с агрегаторами Яндекс.Такси и А1.</p>
+                    </div>
+                </div>
+
+                <!-- Правая часть с преимуществами -->
+                <div class="company__right">
+                    <!-- Блок преимущества 1 -->
+                    <div class="company__right-item">
+                        <div class="company__right-pic">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" aria-hidden="true">
+                                <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1.06 13.54L7.4 12l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41-5.64 5.66z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="company__right-inner">
+                            <h3 class="company__right-name">Качество</h3>
+                            <p class="company__right-text">Используем только премиальные автомобили и тщательно отбираем водителей</p>
+                        </div>
+                    </div>
+
+                    <!-- Блок преимущества 2 -->
+                    <div class="company__right-item">
+                        <div class="company__right-pic">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" aria-hidden="true">
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="company__right-inner">
+                            <h3 class="company__right-name">Пунктуальность</h3>
+                            <p class="company__right-text">Все поездки выполняются точно по расписанию без задержек</p>
+                        </div>
+                    </div>
+
+                    <!-- Блок преимущества 3 -->
+                    <div class="company__right-item">
+                        <div class="company__right-pic">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" aria-hidden="true">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="company__right-inner">
+                            <h3 class="company__right-name">Надежность</h3>
+                            <p class="company__right-text">Полная финансовая ответственность за каждый заказ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">МЫ ПРЕДЛАГАЕМ</h2>
+            <p class="services__subtitle">
+                Мы выполняем весь спектр задач для корпоративных клиентов. Каждую услугу мы готовы 
+                адаптировать под ваши конкретные потребности и бюджет. Предлагаем гибкие решения — от единичных 
+                трансферов до полного транспортного сопровождения бизнеса.</p>
+            <p class="services__subtitle">Самые востребованные услуги:</p>
+            <div class="services__grid">
+                <div class="service-card card">
+                    <div class="service-card__image-wrapper">
+                        <img src="img/services/corporate.webp" alt="Корпоративные перевозки" class="service-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Транспорт для сотрудников</h3>
+                        <p class="service-card__description">Обеспечим регулярные поездки для сотрудников вашей компании</p>
+                        <button class="mini-btn" data-service="Транспорт для сотрудников">Заказать</button>
+                    </div>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-card__image-wrapper">
+                        <img src="img/services/airport1.webp" alt="Трансфер гостей" class="service-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Трансфер гостей</h3>
+                        <p class="service-card__description">Встретим с табличкой в аэропорту или на вокзале и поможем с багажом</p>
+                        <button class="mini-btn" data-service="Трансфер гостей">Заказать</button>
+                    </div>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-card__image-wrapper">
+                        <img src="img/services/events1.webp" alt="Деловые мероприятия" class="service-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Деловые мероприятия</h3>
+                        <p class="service-card__description">Организуем перевозку гостей на конференции, форумы и выставки</p>
+                        <button class="mini-btn" data-service="Деловые мероприятия">Заказать</button>
+                    </div>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-card__image-wrapper">
+                        <img src="img/services/intercity.webp" alt="Междугородние поездки" class="service-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Междугородние поездки</h3>
+                        <p class="service-card__description">Довезем с комфортом в любую точку Беларуси</p>
+                        <button class="mini-btn" data-service="Междугородние поездки">Заказать</button>
+                    </div>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-card__image-wrapper">
+                        <img src="img/services/v-class.webp" alt="Корпоративы" class="service-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Корпоративы и праздники</h3>
+                        <p class="service-card__description">Встретим, довезём и развезём после мероприятия</p>
+                        <button class="mini-btn" data-service="Корпоративы и праздники">Заказать</button>
+                    </div>            
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-card__image-wrapper">
+                        <img src="img/services/rental.webp" alt="Аренда автомобиля" class="service-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Аренда автомобиля</h3>
+                        <p class="service-card__description">Предоставим машину под ваши нужды: с водителем или для личного использования</p>
+                        <button class="mini-btn" data-service="Аренда автомобиля">Заказать</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars">
+        <div class="container">
+            <h2 class="section-title">НАШИ АВТОМОБИЛИ</h2>
+            <p class="services__subtitle">Наш автопарк состоит из более чем 40 автомобилей и включает такие марки как Mercedes, BMW, Kia, Volkswagen, Skoda,
+                Peugeot и другие. Самые востребованные модели ниже, но если ищете что-то определённое – поможем подобрать.
+            </p>
+            <div class="cars__grid">
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/lada.webp" alt="Lada Vesta" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Lada Vesta</h3>
+                        <div class="car-card__class">Эконом</div>
+                        <button class="mini-btn" data-car="Lada Vesta" data-class="Эконом">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/skoda.webp" alt="Skoda Rapid" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Skoda Rapid</h3>
+                        <div class="car-card__class">Эконом</div>
+                        <button class="mini-btn" data-car="Skoda Rapid" data-class="Эконом">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/peugeot.webp" alt="Peugeot 308" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>	
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Peugeot 308</h3>
+                        <div class="car-card__class">Комфорт</div>
+                        <button class="mini-btn" data-car="Peugeot 308" data-class="Комфорт">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/kia.webp" alt="Kia K5" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Kia K5</h3>
+                        <div class="car-card__class">Комфорт</div>
+                        <button class="mini-btn" data-car="Kia K5" data-class="Комфорт">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/bmw-5.webp" alt="BMW 5 Series G30" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">BMW 5 Series G30</h3>
+                        <div class="car-card__class">Бизнес</div>
+                        <button class="mini-btn" data-car="BMW 5 Series G30" data-class="Бизнес">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/mercedes-e.webp" alt="Mercedes E-class W212" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Mercedes E-class</h3>
+                        <div class="car-card__class">Бизнес</div>
+                        <button class="mini-btn" data-car="Mercedes E-class" data-class="Бизнес">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/mercedes-s.webp" alt="Mercedes S-class W222" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Mercedes S-class</h3>
+                        <div class="car-card__class">Премиум</div>
+                        <button class="mini-btn" data-car="Mercedes S-class" data-class="Премиум">Заказать</button>
+                    </div>
+                </div>
+                <div class="car-card card">
+                    <div class="car-card__image-container">
+                        <img src="img/cars/bmw-7.webp" alt="BMW 7" class="car-card__image" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">BMW 7</h3>
+                        <div class="car-card__class">Премиум</div>
+                        <button class="mini-btn" data-car="BMW 7" data-class="Премиум">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drivers Section -->
+    <section id="drivers" class="section drivers-section">
+        <div class="container">
+            <h2 class="section-title">НАШИ ВОДИТЕЛИ</h2>
+            
+            <!-- Блок с текстом и списком в одну строку -->
+            <div class="drivers-container">
+                <!-- Левый блок с текстом -->
+                <div class="drivers-text-block">
+                    <p>Наша компания гордится своими водителями – настоящими профессионалами дороги. Это не просто сотрудники, 
+                        а надежные партнеры, которым мы доверяем как себе.</p>
+                    <p>Мы создали команду экспертов, которые сочетают мастерство вождения с заботой о комфорте пассажиров.</p>
+                </div>
+                
+                <!-- Правый блок со списком -->
+                <div class="drivers-list-block">
+                    <p class="list-title">Каждый из водителей:</p>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <span class="feature-icon" aria-hidden="true">✔</span>
+                            <span class="feature-text">Прошел тщательный отбор и обучение</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon" aria-hidden="true">✔</span>
+                            <span class="feature-text">Имеет многолетний безаварийный стаж</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon" aria-hidden="true">✔</span>
+                            <span class="feature-text">Следует стандартам безопасности и сервиса</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Подзаголовок команды -->
+            <h3 class="team-title">Знакомьтесь с частью нашей команды:</h3>
+            
+            <!-- Блок с карточками водителей -->
+            <div class="drivers-grid">
+                <!-- Карточка водителя 1 -->
+                <div class="driver-card">
+                    <div class="driver-photo">
+                        <img src="img/drivers/driver1.webp" alt="Водитель Михаил" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Михаил</h3>
+                        <p class="driver-stats">
+                            <span class="driver-experience">12 лет</span> | 
+                            <span class="driver-rating">5.0★</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карточка водителя 2 -->
+                <div class="driver-card">
+                    <div class="driver-photo">
+                        <img src="img/drivers/driver2.webp" alt="Водитель Дмитрий" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Дмитрий</h3>
+                        <p class="driver-stats">
+                            <span class="driver-experience">8 лет</span> | 
+                            <span class="driver-rating">4.9★</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карточка водителя 3 -->
+                <div class="driver-card">
+                    <div class="driver-photo">
+                        <img src="img/drivers/driver3.jpg" alt="Водитель Анна" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Анна</h3>
+                        <p class="driver-stats">
+                            <span class="driver-experience">8 лет</span> | 
+                            <span class="driver-rating">5.0★</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карточка водителя 4 -->
+                <div class="driver-card">
+                    <div class="driver-photo">
+                        <img src="img/drivers/driver4.webp" alt="Водитель Сергей" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Сергей</h3>
+                        <p class="driver-stats">
+                            <span class="driver-experience">8 лет</span> | 
+                            <span class="driver-rating">4.9★</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карточка водителя 5 -->
+                <div class="driver-card">
+                    <div class="driver-photo">
+                        <img src="img/drivers/driver5.jpg" alt="Водитель Алексей" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="driver-info">
+                        <h3 class="driver-name">Алексей</h3>
+                        <p class="driver-stats">
+                            <span class="driver-experience">7 лет</span> | 
+                            <span class="driver-rating">4.8★</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vacancies Section -->
+    <section id="vacancies" class="vacancies">
+        <div class="container">
+            <h2 class="vacancies__title section-title--light">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ</h2>
+            <div class="vacancies__content">
+                <div class="vacancies__text">
+                    <p>Мы растем и зовём в команду профессионалов! 
+                        Стабильная работа, комфортные условия и атмосфера, где ценят твой труд. Присоединяйся – вместе добиваемся большего!</p>
+                    <ul class="vacancies__list">
+                        <li class="vacancies__item">Оформление в реестр</li>
+                        <li class="vacancies__item">Официальное трудоустройство</li>
+                        <li class="vacancies__item">Современный автопарк</li>
+                        <li class="vacancies__item">Гибкий график работы</li>
+                        <li class="vacancies__item">Корпоративные бонусы</li>
+                    </ul>
+                </div>
+                
+                <div class="vacancies__action">
+                    <a href="vacancies.html" class="btn hero__btn">ОТКЛИКНУТЬСЯ НА ВАКАНСИЮ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="section-title">СВЯЖИТЕСЬ С НАМИ</h2>
+            
+            <div class="contact__wrapper">
+                <!-- Форма обратной связи -->
+                <form id="mainFeedbackForm" class="form contact__form" aria-labelledby="form-heading">
+                    <h3 id="form-heading" class="form-title">Оставить заявку</h3>
+                    
+                    <div class="form-group">
+                        <label for="name" class="form-group__label sr-only">Имя</label>
+                        <input type="text" id="name" name="name" class="form-group__input" placeholder="Имя*" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-group__label sr-only">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="form-group__input" placeholder="Телефон*" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service" class="form-group__label sr-only">Услуга</label>
+                        <select id="service" name="service" class="form-group__select" required aria-required="true">
+                            <option value="" disabled selected hidden>Услуга*</option>
+                            <option value="transfer">Заказ трансфера</option>
+                            <option value="vacancy">Стать водителем</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-group__label sr-only">Сообщение</label>
+                        <textarea id="message" name="message" rows="4" class="form-group__textarea" placeholder="Сообщение" aria-label="Ваше сообщение"></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn hero__btn" aria-label="Отправить заявку">
+                            ОТПРАВИТЬ
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Контактная информация -->
+                <aside class="contact__info" aria-labelledby="info-heading">
+                    <h3 id="info-heading" class="info-title">Контактная информация</h3>
+                    
+                    <address class="contact__details">
+                        <div class="info-item">
+                            <span class="info-item__icon" aria-hidden="true">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <p class="info-item__text">г. Минск, ул. Тиражная 150, офис 206</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <span class="info-item__icon" aria-hidden="true">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <p class="info-item__text">
+                                <a href="tel:+375297041455" class="contact-link">+375 (29) 704-14-55</a> - общий
+                            </p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <span class="info-item__icon" aria-hidden="true">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <p class="info-item__text">
+                                <a href="mailto:info@taxipark-exp.ru" class="contact-link">info@taxipark-exp.ru</a>
+                            </p>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-item__icon" aria-hidden="true">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                            <div class="contact__social">
+                                <span class="contact__social-text">Наши соцсети:</span>
+                                <div class="contact__social-icons">
+                                    <a href="https://t.me/your_telegram" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a href="https://instagram.com/bvet.ra" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/@bvetra.by" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-item__icon" aria-hidden="true">
+                                <i class="fas fa-clock"></i>
+                            </span>
+                            <p class="info-item__text">Время работы офиса с 9:00 до 17:00.<br>Прием заявок круглосуточно без выходных</p>
+                        </div>
+                    </address>
+                    
+                    <div class="map" aria-label="Карта расположения офиса">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&amp;source=constructor" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                title="Карта расположения офиса компании"
+                                aria-label="Интерактивная карта с расположением офиса">
+                        </iframe>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__col">
+                    <h4 class="footer__title">ТУП "Быстрее ветра"</h4>
+                    <p>УНП 692217981</p>
+                    <p>ОКПО 506885336000</p> 
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Доставляем с комфортом 24/7</h4>
+                    <p>&copy; 2025 ТУП "Быстрее ветра". Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка для открытия формы -->
+    <button class="feedback-trigger" aria-label="Оставить заявку">Оставить заявку</button>
+
+    <!-- Модальное окно с формой -->
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="feedback-modal__overlay"></div>
+        <div class="feedback-modal__container">
+            <button class="feedback-modal__close" aria-label="Закрыть окно">&times;</button>
+            
+            <div class="feedback-content">
+                <!-- Левая часть с текстом -->
+                <div class="feedback-text">
+                    <h3>Оставьте заявку</h3>
+                    <p>Мы свяжемся с вами, ответим на интересующие вопросы и подготовим коммерческое предложение.</p>
+                </div>
+                
+                <!-- Правая часть с формой -->
+                <div class="feedback-form">
+                    <form id="modalFeedbackForm">
+                        <!-- Радио-кнопки выбора услуги -->
+                        <div class="form-options">
+
+                        <label class="option-item">
+                        <input type="radio" name="service" value="transfer" checked>
+                        <span class="radio-custom"></span>
+                        <span class="option-text">Заказать трансфер</span>
+                        </label>
+                    
+                        <label class="option-item">
+                    <input type="radio" name="service" value="career">
+                    <span class="radio-custom"></span>
+                    <span class="option-text">Карьера водителя</span>
+                    </label>
+                    
+                    <label class="option-item">
+                    <input type="radio" name="service" value="other">
+                    <span class="radio-custom"></span>
+                    <span class="option-text">Другое</span>
+                    </label>
+                </div>
+          
+          <!-- Поля формы -->
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Имя*" required>
+          </div>
+          
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Телефон*" required>
+          </div>
+          
+          <div class="form-group">
+            <textarea name="message" placeholder="Сообщение (укажите название бизнеса и количество человек)"></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
